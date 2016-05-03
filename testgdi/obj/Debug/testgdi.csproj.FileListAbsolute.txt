@@ -1,0 +1,13 @@
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Debug\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Debug\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.csprojResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\Interop.ADOX.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.csproj.ResolveComReference.cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.Form1.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.Properties.Resources.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.csproj.GenerateResource.Cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Debug\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Debug\DTTOOLSx86.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Debug\DTTOOLSx86.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Debug\DTTOOLSx86.xml

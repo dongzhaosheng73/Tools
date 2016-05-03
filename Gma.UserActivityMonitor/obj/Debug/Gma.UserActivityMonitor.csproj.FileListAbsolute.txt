@@ -1,0 +1,22 @@
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+D:\devloper\System\hk2\GlobalHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\obj\Debug\ResolveAssemblyReference.cache
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+D:\devloper\System\CsHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Administrator\Desktop\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+C:\Users\Administrator\Desktop\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Administrator\Desktop\CsHook\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+C:\Users\Administrator\Desktop\CsHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+C:\Users\Administrator\Desktop\CsHook\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\Debug\Gma.xml
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\Debug\Gma.UserActivityMonitor.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\obj\Debug\Gma.UserActivityMonitor.pdb

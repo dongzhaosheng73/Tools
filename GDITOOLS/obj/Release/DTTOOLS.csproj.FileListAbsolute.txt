@@ -1,0 +1,42 @@
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADODB.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.XML
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csprojResolveAssemblyReference.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.XML
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\DTTOOLS.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADODB.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.pdb
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADODB.dll
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\dzstools.xml
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\dzstools.dll
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\dzstools.pdb
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\dzstools.dll
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\dzstools.pdb
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\Dzstools.xml
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\Dzstools.dll
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Release\Dzstools.pdb
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADODB.dll
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Dzstools.dll
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\Dzstools.pdb
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csprojResolveAssemblyReference.cache
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\bin\Release\Dzstools.xml
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\bin\Release\Dzstools.dll
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\bin\Release\Dzstools.pdb
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Interop.ADODB.dll
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Dzstools.dll
+C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Dzstools.pdb

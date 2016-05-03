@@ -1,0 +1,15 @@
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\bin\x64\Debug\WpfApplication1.exe.config
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\bin\x64\Debug\WpfApplication1.exe
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\bin\x64\Debug\WpfApplication1.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\bin\x64\Debug\Gma.UserActivityMonitor.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\bin\x64\Debug\Gma.UserActivityMonitor.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\MainWindow.baml
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\MainWindow.g.cs
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\App.g.cs
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1_MarkupCompile.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.g.resources
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.Properties.Resources.resources
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.csproj.GenerateResource.Cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.exe
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\WpfApplication1\obj\x64\Debug\WpfApplication1.pdb

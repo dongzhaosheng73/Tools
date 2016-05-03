@@ -1,0 +1,7 @@
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Debug\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\bin\Debug\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Debug\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Debug\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Debug\Interop.ADODB.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Debug\Interop.ADOX.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\GDITOOLS\obj\Debug\DTTOOLS.csproj.ResolveComReference.cache

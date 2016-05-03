@@ -1,0 +1,5 @@
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\x86\Debug\Gma.UserActivityMonitor.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\x86\Debug\Gma.UserActivityMonitor.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\bin\x86\Debug\Gma.xml
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\obj\x86\Debug\Gma.UserActivityMonitor.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\Gma.UserActivityMonitor\obj\x86\Debug\Gma.UserActivityMonitor.pdb

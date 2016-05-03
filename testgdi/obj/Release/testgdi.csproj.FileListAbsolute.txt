@@ -1,0 +1,20 @@
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.exe
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.pdb
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\bin\Release\testgdi.exe
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\bin\Release\testgdi.pdb
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\bin\Release\DTTOOLS.dll
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\bin\Release\DTTOOLS.pdb
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.csprojResolveAssemblyReference.cache
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.Form1.resources
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.Properties.Resources.resources
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\Release\testgdi.csproj.GenerateResource.Cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Release\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Release\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Release\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\Release\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.Form1.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.Properties.Resources.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.csproj.GenerateResource.Cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\Release\testgdi.csprojResolveAssemblyReference.cache

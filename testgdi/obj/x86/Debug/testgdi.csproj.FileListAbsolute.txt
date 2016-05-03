@@ -1,0 +1,49 @@
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\Interop.ADOX.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\DTTOOLSx86.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\DTTOOLSx86.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Form1.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Properties.Resources.resources
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.GenerateResource.Cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.exe
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csprojResolveAssemblyReference.cache
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\DTTOOLS.dll
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\DTTOOLS.pdb
+F:\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\DTTOOLS.xml
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\Interop.ADOX.dll
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.exe
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.exe
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.pdb
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csprojResolveAssemblyReference.cache
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Form1.resources
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Properties.Resources.resources
+D:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.GenerateResource.Cache
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\Interop.ADOX.dll
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.exe
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.pdb
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.exe
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.pdb
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csprojResolveAssemblyReference.cache
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Form1.resources
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Properties.Resources.resources
+I:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.GenerateResource.Cache
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\Interop.ADOX.dll
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.exe
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.pdb
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.exe
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\bin\x86\Debug\testgdi.pdb
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csprojResolveAssemblyReference.cache
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Form1.resources
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.Properties.Resources.resources
+F:\F盘\Documents\Visual Studio 2012\Projects\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.GenerateResource.Cache
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\x86\Debug\testgdi.exe
+C:\Users\dzs\Desktop\GDITOOLS\testgdi\obj\x86\Debug\testgdi.pdb

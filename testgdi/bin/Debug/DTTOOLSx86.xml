@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DTTOOLSx86</name>
+    </assembly>
+    <members>
+        <member name="M:DTTOOLS.Database.DTaccess.selectDate(System.String,System.String)">
+            <summary>
+            查询数据库
+            </summary>
+            <param name="sql">@"SELECT * FROM {0} WHERE {1}='{2}' int 无引号</param>
+            <param name="table">表名</param>
+            <returns>返回查询结果
+            </returns>
+        </member>
+        <member name="M:DTTOOLS.Database.DTaccess.RunSQL(System.String,System.String)">
+            <summary>
+            执行sql语句
+            </summary>
+            <param name="sql">DELETE * FROM TABLE WHERE {1}={2} UPDATE TABLE SET {1}={2} INSERT INTO TABLE({1})VALUES({2})</param>
+            <param name="table">表名</param>
+            <returns></returns>
+        </member>
+        <member name="P:DTTOOLS.Database.DTaccess.DatePath">
+            <summary>
+            数据库路径
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessTable.TableName">
+            <summary>
+            表名
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessTable.TableKey">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessTable.Columns">
+            <summary>
+            字段集合
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessField.FieldName">
+            <summary>
+            字段名
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessField.Type">
+            <summary>
+            字段类型
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessField.Fildleght">
+            <summary>
+            字段长度
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Database.AccessField.AutoIncrement">
+            <summary>
+            自动增长
+            </summary>
+        </member>
+    </members>
+</doc>
