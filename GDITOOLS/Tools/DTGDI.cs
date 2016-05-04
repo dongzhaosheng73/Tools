@@ -927,7 +927,78 @@ namespace DTTOOLS
 
             return b;
         } // end of Brightness
+        /// <summary>
+        /// 蓝背景抠像
+        /// </summary>
+        /// <param name="low"></param>
+        /// <param name="hig"></param>
+        /// <param name="metting"></param>
+        /// <param name="bit"></param>
+        /// <returns></returns>
+        public static Bitmap BlueScreenMatting(int low, int hig, int metting, Bitmap bit)
+        {
+            bit.MakeTransparent(System.Drawing.Color.Blue);
 
+            try
+            {
+                Rectangle ret = new Rectangle(0, 0, bit.Width, bit.Height);
+                var vHeight = bit.Height;
+                var vWidth = bit.Width;
+                var bitmapData = bit.LockBits(ret, ImageLockMode.ReadWrite, System.Drawing.Imaging.PixelFormat.Format32bppArgb);
+
+                unsafe
+                {
+                    byte* pixels = (byte*)bitmapData.Scan0;
+
+                    int nOffset = bitmapData.Stride - vWidth * 4;
+
+                    for (int row = 0; row < vHeight; ++row)
+                    {
+                        for (int col = 0; col < vWidth; ++col)
+                        {
+                            var B = pixels[0];
+                            var G = pixels[1];
+                            var R = pixels[2];
+
+                            int vAlpha =B - Math.Max(R, G);
+
+                            if (vAlpha < 0) vAlpha = 0;
+
+                            if ((vAlpha <= hig) && (vAlpha >= low))
+                            {
+                                vAlpha = 255;
+                            }
+
+                            if (vAlpha < metting)
+                                vAlpha = 0;
+
+                            vAlpha = 255 - vAlpha;
+
+                            if (B > Math.Max(R, G))
+                            {
+                                pixels[1] = Math.Max(R, G);
+
+                            }
+
+                            pixels[3] = (byte)vAlpha;
+
+                            pixels += 4;
+                        }
+                        pixels += nOffset;
+                    }
+                }
+
+                bit.UnlockBits(bitmapData);
+
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+
+            return bit;
+
+        }
         /// <summary>
         /// 绿背景抠像
         /// </summary>
@@ -936,7 +1007,7 @@ namespace DTTOOLS
         /// <param name="metting"></param>
         /// <param name="bit"></param>
         /// <returns></returns>
-        public Bitmap GreenScreenMatting(int low, int hig, int metting, Bitmap bit)
+        public static Bitmap GreenScreenMatting(int low, int hig, int metting, Bitmap bit)
         {
             bit.MakeTransparent(System.Drawing.Color.Green);
 
@@ -1445,7 +1516,7 @@ namespace DTTOOLS
         /// <param name="h">高</param>
         /// <param name="pt">原图是否压在边框上</param>
         /// <returns></returns>
-        public static BitmapSource Synthesis(Bitmap p1, Bitmap p2, double x, double y, double w, double h,bool pt)
+        public static BitmapSource SynthesisBitmapSource(Bitmap p1, Bitmap p2, double x, double y, double w, double h, bool pt)
         {
             Bitmap returnBitmap = null;
 
@@ -1486,7 +1557,58 @@ namespace DTTOOLS
                 if (p1 != null) p1.Dispose();
             }
         }
+        /// <summary>
+        ///图像合成
+        /// </summary>
+        /// <param name="p1">原图</param>
+        /// <param name="p2">边框</param>
+        /// <param name="x">起点坐标x</param>
+        /// <param name="y">起点坐标y</param>
+        /// <param name="w">宽</param>
+        /// <param name="h">高</param>
+        /// <param name="pt">原图是否压在边框上</param>
+        /// <returns></returns>
+        public static Bitmap SynthesisBitmap(Bitmap p1, Bitmap p2, double x, double y, double w, double h, bool pt)
+        {
+            Bitmap returnBitmap = null;
 
+            try
+            {
+                var mpic = (Bitmap)p1.Clone();
+
+                var backpic = (Bitmap)p2.Clone();
+
+                returnBitmap = new Bitmap(backpic.Width, backpic.Height);
+
+                Graphics g = Graphics.FromImage(returnBitmap);
+                if (pt)
+                {
+                    g.DrawImage(backpic, 0, 0, backpic.Width, backpic.Height);
+                    g.DrawImage(mpic, (int)x, (int)y, (int)w, (int)h);
+                }
+                else
+                {
+                    g.DrawImage(mpic, (int)x, (int)y, (int)w, (int)h);
+                    g.DrawImage(backpic, 0, 0, backpic.Width, backpic.Height);
+                }
+
+                g.Dispose();
+                mpic.Dispose();
+                backpic.Dispose();
+                return (Bitmap)returnBitmap.Clone();
+            }
+            catch (Exception ex)
+            {
+                var errorlog = new Errorlog(Directory.GetCurrentDirectory() + "\\error\\");
+                errorlog.WriteError(ex);
+                return null;
+            }
+            finally
+            {
+                if (returnBitmap != null) returnBitmap.Dispose();
+                if (p1 != null) p1.Dispose();
+            }
+        }
         /// <summary>
         /// 无损压缩图片
         /// </summary>

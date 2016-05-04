@@ -40,3 +40,11 @@ C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Interop.ADOX.dll
 C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
 C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Dzstools.dll
 C:\Users\dzs\Desktop\GDITOOLS\GDITOOLS\obj\Release\Dzstools.pdb
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\bin\Release\Dzstools.xml
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\bin\Release\Dzstools.dll
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\bin\Release\Dzstools.pdb
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\obj\Release\Interop.ADODB.dll
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\obj\Release\Interop.ADOX.dll
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\obj\Release\DTTOOLS.csproj.ResolveComReference.cache
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\obj\Release\Dzstools.dll
+C:\Users\dongz\Documents\GitHub\Tools\GDITOOLS\obj\Release\Dzstools.pdb

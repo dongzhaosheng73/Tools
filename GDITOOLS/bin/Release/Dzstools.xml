@@ -2276,6 +2276,16 @@
             <param name="degree">亮度</param>
             <returns>Bitmap</returns> 
         </member>
+        <member name="M:DTTOOLS.GDITools.BlueScreenMatting(System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap)">
+            <summary>
+            蓝背景抠像
+            </summary>
+            <param name="low"></param>
+            <param name="hig"></param>
+            <param name="metting"></param>
+            <param name="bit"></param>
+            <returns></returns>
+        </member>
         <member name="M:DTTOOLS.GDITools.GreenScreenMatting(System.Int32,System.Int32,System.Int32,System.Drawing.Bitmap)">
             <summary>
             绿背景抠像
@@ -2355,7 +2365,20 @@
             <param name="y">合成起点y坐标</param>
             <returns></returns>
         </member>
-        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+        <member name="M:DTTOOLS.GDITools.SynthesisBitmapSource(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+             <summary>
+            图像合成
+             </summary>
+             <param name="p1">原图</param>
+             <param name="p2">边框</param>
+             <param name="x">起点坐标x</param>
+             <param name="y">起点坐标y</param>
+             <param name="w">宽</param>
+             <param name="h">高</param>
+             <param name="pt">原图是否压在边框上</param>
+             <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.GDITools.SynthesisBitmap(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
              <summary>
             图像合成
              </summary>
