@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
 using System.Runtime.InteropServices;
@@ -392,10 +393,10 @@ namespace DTTOOLS.Print
         /// 返回所有可用纸张类型
         /// </summary>
         /// <returns>PaperSizes</returns>
-        public static System.Drawing.Printing.PaperSize[] GetPrintPageType(System.Drawing.Printing.PrintDocument pd)
+        public static PaperSize[] GetPrintPageType(PrintDocument pd)
         {
-            System.Drawing.Printing.PrinterSettings.PaperSizeCollection PageType = pd.DefaultPageSettings.PrinterSettings.PaperSizes;
-            System.Drawing.Printing.PaperSize[] Type = new System.Drawing.Printing.PaperSize[PageType.Count];
+            var PageType = pd.DefaultPageSettings.PrinterSettings.PaperSizes;
+            var Type = new PaperSize[PageType.Count];
 
             for (int i = 0; i < PageType.Count; i++)
             {
@@ -433,7 +434,24 @@ namespace DTTOOLS.Print
             }
            
         }
-
+        /// <summary>
+        /// 获取默认打印机纸张
+        /// </summary>
+        /// <returns></returns>
+        public static string GetDefaultPage()
+        {
+            PrintDocument fPrintDocument = new PrintDocument();
+            return fPrintDocument.PrinterSettings.DefaultPageSettings.PaperSize.PaperName;
+        }
+        /// <summary>
+        /// 获取默认打印机
+        /// </summary>
+        /// <returns></returns>
+        public static string GetDefaultPrint()
+        {
+            PrintDocument fPrintDocument = new PrintDocument();
+            return fPrintDocument.PrinterSettings.PrinterName;
+        }
         [DllImport("winspool.drv")]      
         private static extern bool SetDefaultPrinter(String Name);
         /// <summary>

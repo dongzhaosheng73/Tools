@@ -51,3 +51,7 @@ C:\Users\dongz\Documents\GitHub\Tools\testgdi\obj\x86\Debug\Interop.ADOX.dll
 C:\Users\dongz\Documents\GitHub\Tools\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
 C:\Users\dongz\Documents\GitHub\Tools\testgdi\obj\x86\Debug\testgdi.exe
 C:\Users\dongz\Documents\GitHub\Tools\testgdi\obj\x86\Debug\testgdi.pdb
+C:\Users\dzs\Desktop\Tools\testgdi\obj\x86\Debug\Interop.ADOX.dll
+C:\Users\dzs\Desktop\Tools\testgdi\obj\x86\Debug\testgdi.csproj.ResolveComReference.cache
+C:\Users\dzs\Desktop\Tools\testgdi\obj\x86\Debug\testgdi.exe
+C:\Users\dzs\Desktop\Tools\testgdi\obj\x86\Debug\testgdi.pdb

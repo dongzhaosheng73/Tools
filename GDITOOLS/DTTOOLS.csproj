@@ -57,6 +57,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommunicationHepler\WinMessage.cs" />
     <Compile Include="ExpandClass\StringEx.cs" />
     <Compile Include="HttpHelper\AItem.cs" />
     <Compile Include="HttpHelper\AType.cs" />
@@ -83,10 +84,11 @@
     <Compile Include="Print\IDTPrint.cs" />
     <Compile Include="Print\PrintTools.cs" />
     <Compile Include="SqlHelper\SqlHelper.cs" />
-    <Compile Include="Tools\DTGDI.cs" />
+    <Compile Include="ImageHepler\DTGDI.cs" />
+    <Compile Include="Tools\DPage.cs" />
     <Compile Include="Tools\ElementInquiry.cs" />
     <Compile Include="Tools\Errorlog.cs" />
-    <Compile Include="Tools\GDIToolsBase.cs" />
+    <Compile Include="ImageHepler\GDIToolsBase.cs" />
     <Compile Include="Hook\GlobalEventProvider.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -95,7 +97,7 @@
     <Compile Include="Hook\HookManager.Structures.cs" />
     <Compile Include="Hook\HookManager.Windows.cs" />
     <Compile Include="Hook\MouseEventExtArgs.cs" />
-    <Compile Include="Tools\IGDITools.cs" />
+    <Compile Include="ImageHepler\IGDITools.cs" />
     <Compile Include="Tools\DTIni.cs" />
     <Compile Include="Print\DTPrint.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

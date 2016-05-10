@@ -37,7 +37,7 @@ namespace DTTOOLS.Tools
         /// <typeparam name="T">获取元素类型</typeparam>
         /// <param name="obj">要查询的元素</param>
         /// <returns></returns>
-         public List<T> GetChildObjects<T>(DependencyObject obj) where T : FrameworkElement  
+        public List<T> GetChildObjects<T>(DependencyObject obj) where T : FrameworkElement  
         {
             var childList = new List<T>();  
   

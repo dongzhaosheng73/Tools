@@ -4,6 +4,14 @@
         <name>Dzstools</name>
     </assembly>
     <members>
+        <member name="M:DTTOOLS.CommunicationHepler.WinMessage.SendMessage(System.String,System.Int32)">
+            <summary>
+            发送消息
+            </summary>
+            <param name="winName">窗体名</param>
+            <param name="msg">消息</param>
+            <returns></returns>
+        </member>
         <member name="M:DTTOOLS.ExpandClass.StringEx.DTCopyFile(System.String,System.String,System.Int32,System.String,System.Boolean)">
             <summary>
             文件拷贝
@@ -44,6 +52,13 @@
             <returns>加密参数</returns>
         </member>
         <member name="M:DTTOOLS.ExpandClass.StringEx.ExeStart(System.String,System.Boolean)">
+            <summary>
+            启动应用
+            </summary>
+            <param name="repeat">是否重复启动</param>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.ExpandClass.StringEx.ExeStart(System.String,System.Boolean,System.String)">
             <summary>
             启动应用
             </summary>
@@ -1030,11 +1045,6 @@
             释放资源
             </summary>
         </member>
-        <member name="P:DTTOOLS.Print.IDTPrint.DocumentPrint">
-            <summary>
-            默认打印机
-            </summary>
-        </member>
         <member name="T:DTTOOLS.Print.PrintTools">
             <summary>
             打印工具类
@@ -1065,6 +1075,18 @@
              </summary>
              <param name="printerDevice">打印机名称</param>
              <returns>状态</returns>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetDefaultPage">
+            <summary>
+            获取默认打印机纸张
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DTTOOLS.Print.PrintTools.GetDefaultPrint">
+            <summary>
+            获取默认打印机
+            </summary>
+            <returns></returns>
         </member>
         <member name="M:DTTOOLS.Print.PrintTools.SettingDefaultPrinter(System.String)">
             <summary>
@@ -2325,17 +2347,18 @@
             </summary>
             <param name="path"></param>
         </member>
-        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String)">
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String,System.Boolean)">
             <summary>
             合成图像
             </summary>
             <param name="bmp">合成原图</param>
             <param name="synpath">合成边路径</param>
             <param name="tx">合成起点x坐标</param>
-            <param name="ty">合成起点y坐标</param>  
+            <param name="ty">合成起点y坐标</param> 
+            <param name="pt">原图是否压在边框上</param>
             <returns></returns>
         </member>
-        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Int32)">
+        <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Int32,System.Int32,System.Boolean)">
             <summary>
             合成图像
             </summary>
@@ -2343,6 +2366,7 @@
             <param name="backpic">边框</param>
             <param name="x">合成起点x坐标</param>
             <param name="y">合成起点y坐标</param>
+            <param name="pt">原图是否压在边框上</param>
             <returns></returns>
         </member>
         <member name="M:DTTOOLS.GDITools.Synthesis(System.Drawing.Bitmap,System.String,System.Int32,System.Int32)">
@@ -2496,6 +2520,60 @@
             <param name="PngStm"></param>
             <param name="size"></param>
             <returns></returns>
+        </member>
+        <member name="T:DTTOOLS.Tools.PageMode`1">
+            <summary>
+            翻页管理类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DTTOOLS.Tools.PageMode`1.#ctor(System.Int32,System.Collections.Generic.List{`0})">
+            <summary>
+            初始化
+            </summary>
+            <param name="index">当前页</param>
+            <param name="count">总页数</param>
+            <param name="span">翻页</param>
+            <param name="data"></param>
+        </member>
+        <member name="M:DTTOOLS.Tools.PageMode`1.PageGo(System.Int32)">
+            <summary>
+            跳转指定页数
+            </summary>
+            <param name="index">指定页</param>
+            <returns>List<T></T></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.PageMode`1.NextPage">
+            <summary>
+            后翻页
+            </summary>
+            <returns>List<T></T></returns>
+        </member>
+        <member name="M:DTTOOLS.Tools.PageMode`1.AgoPage">
+            <summary>
+            前翻页
+            </summary>
+            <returns>List<T></T></returns>
+        </member>
+        <member name="P:DTTOOLS.Tools.PageMode`1.Pageindex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Tools.PageMode`1.Pagecount">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Tools.PageMode`1.PageSpan">
+            <summary>
+            每页的数据个数
+            </summary>
+        </member>
+        <member name="P:DTTOOLS.Tools.PageMode`1.PageData">
+            <summary>
+            数据
+            </summary>
         </member>
         <member name="M:DTTOOLS.Tools.ElementInquiry.GetParentObject``1(System.Windows.DependencyObject)">
             <summary>
@@ -3476,14 +3554,6 @@
             读取XML节点文本
             </summary>
             <param name="xmlNode"></param>
-            <returns></returns>
-        </member>
-        <member name="M:DTTOOLS.WinAIP.WindowsAPI.SendMessage(System.String,System.Int32)">
-            <summary>
-            发送消息
-            </summary>
-            <param name="winName">窗体名</param>
-            <param name="msg">消息</param>
             <returns></returns>
         </member>
     </members>
