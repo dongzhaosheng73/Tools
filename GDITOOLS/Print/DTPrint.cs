@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Drawing.Printing;
 using System.Windows.Forms;
 
 namespace DTTOOLS.Print
@@ -12,11 +11,7 @@ namespace DTTOOLS.Print
     /// </summary>
     public class DTPrint : IDTPrint
     {
-        public delegate void PrintDelegate(object image);
-
-        public event PrintDelegate event_printend;
         public System.Drawing.Printing.PrintDocument DocumentPrint { set; get; }
-
         public  struct PDPI
         {
             public int X;
@@ -58,7 +53,6 @@ namespace DTTOOLS.Print
         public DTPrint()
         {
             DocumentPrint = new System.Drawing.Printing.PrintDocument();
-            
             DocumentPrint.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(Pd_BeginPrint);
             DocumentPrint.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(Pd_PrintPage);        
         }
@@ -97,8 +91,8 @@ namespace DTTOOLS.Print
         /// <param name="margin">打印边距</param>
         public DTPrint(string defaultPrinter, string page, bool Landscape,System.Drawing.Printing.Margins margin)
         {
-            DocumentPrint = new System.Drawing.Printing.PrintDocument {PrinterSettings = {PrinterName = defaultPrinter}};
-            DocumentPrint.PrintController = new StandardPrintController();
+            DocumentPrint = new System.Drawing.Printing.PrintDocument();
+            DocumentPrint.PrinterSettings.PrinterName = defaultPrinter;
             var papers = new List<System.Drawing.Printing.PaperSize>(DTTOOLS.Print.PrintTools.GetPrintPageType(DocumentPrint));
             DocumentPrint.DefaultPageSettings.PaperSize = papers.Find(x => x.PaperName == page);
             DocumentPrint.DefaultPageSettings.Margins = margin;
@@ -119,7 +113,6 @@ namespace DTTOOLS.Print
             DocumentPrint.Dispose();
             GC.Collect();
         }
-      
         /// <summary>
         /// 打印
         /// </summary>
@@ -134,7 +127,6 @@ namespace DTTOOLS.Print
             DocumentPrint.Dispose();
             GC.Collect();
         }
-       
         /// <summary>
         /// 打印预览
         /// </summary>
@@ -218,7 +210,7 @@ namespace DTTOOLS.Print
                     e.Graphics.Clear(Color.White);
                     e.HasMorePages = false;
                     e.Graphics.DrawImage(TBitmap, 0, 0);
-                    if (event_printend != null) event_printend(TBitmap.Clone());
+                    //TBitmap.Save(@"a.jpg");
                     PrintBitmap.Dispose();
                     TBitmap.Dispose();
                 }
@@ -238,7 +230,7 @@ namespace DTTOOLS.Print
                     e.Graphics.Clear(Color.White);
                     e.HasMorePages = false;
                     e.Graphics.DrawImage(TBitmap, 0, 0);
-                    if (event_printend != null) event_printend(TBitmap.Clone());
+                    //PrintBitmap.Save(@"c:\b.jpg");
                     PrintBitmap.Dispose();
                     TBitmap.Dispose();
                 }

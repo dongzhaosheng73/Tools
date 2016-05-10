@@ -93,22 +93,20 @@ namespace DTTOOLS
             MemoryStream ms = null;
             try
             {
-                FileStream fStream = new FileStream(path,FileMode.Open,FileAccess.Read,FileShare.Read);
+                FileStream fStream = new FileStream(path,FileMode.Open,FileAccess.ReadWrite,FileShare.ReadWrite);
 
                 byte[] bytes = new byte[fStream.Length];
 
                 fStream.Read(bytes, 0, bytes.Length);
 
                 ms = new MemoryStream(bytes);
-
-                fStream.Dispose();
-                fStream.Close();
                              
                 Bitmap  TempBitmap = (Bitmap)Bitmap.FromStream(ms,false, false);
 
                 Bitmap rBitmap = new Bitmap(TempBitmap.Width, TempBitmap.Height);
 
                 Graphics g = Graphics.FromImage(rBitmap);
+
 
                 g.DrawImage(TempBitmap, 0, 0, TempBitmap.Width,TempBitmap.Height);
              
@@ -185,7 +183,7 @@ namespace DTTOOLS
             try
             {
                 ImageBrush b = new ImageBrush();
-                FileStream fs = new System.IO.FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read);
+                FileStream fs = new System.IO.FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 byte[] bytes = new byte[fs.Length];
                 fs.Read(bytes, 0, bytes.Length);
                 fs.Dispose();
@@ -218,6 +216,7 @@ namespace DTTOOLS
         {
             try
             {
+
                 var fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 var bytes = new byte[fs.Length];
                 fs.Read(bytes, 0, bytes.Length);
@@ -576,53 +575,48 @@ namespace DTTOOLS
         {
             try
             {
-                var fs = new FileStream(Path, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
 
-                var bytes = new byte[fs.Length];
-                fs.Read(bytes, 0, bytes.Length);
-                fs.Dispose();
-                fs.Close();
+                byte[] bytes = File.ReadAllBytes(Path);
 
-                using (var ms = new MemoryStream(bytes))
+                MemoryStream ms = new MemoryStream(bytes);
+
+                Bitmap TempBitmap = (Bitmap)Bitmap.FromStream(ms, false, false);
+
+                System.Drawing.Point TempXY;
+
+                if (outsize == false)
                 {
-                    var TempBitmap = (Bitmap)Bitmap.FromStream(ms, false, false);
+                    Picsize = FitSize(TempBitmap.Width, TempBitmap.Height, Dsw, Dsh);
 
-                    System.Drawing.Point TempXY;
-
-                    if (outsize == false)
-                    {
-                        Picsize = FitSize(TempBitmap.Width, TempBitmap.Height, Dsw, Dsh);
-
-                        TempXY = PointXY(Picsize, Dsw, Dsh);
-                    }
-                    else
-                    {
-                        Picsize = FitSizeOutSide(TempBitmap.Width, TempBitmap.Height, Dsw, Dsh);
-
-                        TempXY = PointXY(Picsize, Dsw, Dsh);
-                    }
-
-                    Bitmap RtBitmap = new Bitmap(Dsw, Dsh);
-
-                    Graphics g = Graphics.FromImage(RtBitmap);
-
-                    g.InterpolationMode = InterpolationMode.HighQualityBicubic;
-
-                    g.PixelOffsetMode = PixelOffsetMode.HighQuality;
-
-                    g.DrawImage(TempBitmap, TempXY.X, TempXY.Y, (int)Math.Round((TempBitmap.Width * Picsize.fitsize), MidpointRounding.ToEven), (int)Math.Round((TempBitmap.Height * Picsize.fitsize), MidpointRounding.ToEven));
-
-                    g.Dispose();
-
-                    TempBitmap.Dispose();
-
-                    ms.Close();
-
-                    ms.Dispose();
-
-                    return RtBitmap;
+                    TempXY = PointXY(Picsize, Dsw, Dsh);
                 }
-                           
+                else
+                {
+                    Picsize = FitSizeOutSide(TempBitmap.Width, TempBitmap.Height, Dsw, Dsh);
+
+                    TempXY = PointXY(Picsize, Dsw, Dsh);
+                }
+
+                Bitmap RtBitmap = new Bitmap(Dsw, Dsh);
+
+                Graphics g = Graphics.FromImage(RtBitmap);
+
+                g.InterpolationMode = InterpolationMode.HighQualityBicubic;
+
+                g.PixelOffsetMode = PixelOffsetMode.HighQuality;
+
+                g.DrawImage(TempBitmap, TempXY.X, TempXY.Y, (int)Math.Round((TempBitmap.Width * Picsize.fitsize), MidpointRounding.ToEven), (int)Math.Round((TempBitmap.Height * Picsize.fitsize), MidpointRounding.ToEven));
+
+                g.Dispose();
+
+                TempBitmap.Dispose();
+
+                ms.Close();
+
+                ms.Dispose();
+
+                return RtBitmap;
+
             }
             catch(Exception ex)
             {
@@ -1380,10 +1374,9 @@ namespace DTTOOLS
         /// <param name="bmp">合成原图</param>
         /// <param name="synpath">合成边路径</param>
         /// <param name="tx">合成起点x坐标</param>
-        /// <param name="ty">合成起点y坐标</param> 
-        /// <param name="pt">原图是否压在边框上</param>
+        /// <param name="ty">合成起点y坐标</param>  
         /// <returns></returns>
-        public static Bitmap Synthesis(Bitmap bmp, string synpath,bool pt)
+        public static Bitmap Synthesis(Bitmap bmp, string synpath)
         {
             var fs = new FileStream(synpath,FileMode.Open,FileAccess.ReadWrite,FileShare.ReadWrite);
 
@@ -1401,7 +1394,7 @@ namespace DTTOOLS
 
             Bitmap PrintT = new Bitmap(bmp.Width, bmp.Height);
 
-            return (Bitmap)Synthesis(bmp, tempBack, 0, 0,pt);
+            return (Bitmap)Synthesis(bmp, tempBack, 0, 0);
             
         }
         /// <summary>
@@ -1411,24 +1404,14 @@ namespace DTTOOLS
         /// <param name="backpic">边框</param>
         /// <param name="x">合成起点x坐标</param>
         /// <param name="y">合成起点y坐标</param>
-        /// <param name="pt">原图是否压在边框上</param>
         /// <returns></returns>
-        public static Bitmap Synthesis(Bitmap mpic, Bitmap backpic, int x, int y,bool pt)
+        public static Bitmap Synthesis(Bitmap mpic, Bitmap backpic, int x, int y)
         {
-            Bitmap b = new Bitmap(backpic.Width, backpic.Height);
-            Graphics g = Graphics.FromImage(b);
-            if (pt)
-            {
-                g.DrawImage(backpic, 0, 0, backpic.Width, backpic.Height);
-                g.DrawImage(mpic, x, y, mpic.Width, mpic.Height);
-            }
-            else
-            {             
-                g.DrawImage(mpic, x, y, mpic.Width, mpic.Height);
-                g.DrawImage(backpic, 0, 0, backpic.Width, backpic.Height);
-              
-            }
-        
+            Bitmap b = new Bitmap(mpic.Width, mpic.Height);
+            Graphics g = Graphics.FromImage(b);           
+            g.DrawImage(mpic, x, y, mpic.Width, mpic.Height);
+            g.DrawImage(backpic, 0, 0, mpic.Width, mpic.Height);
+           // b.Save(@"a.jpg");
             g.Dispose();
             mpic.Dispose();
             backpic.Dispose();
@@ -1809,8 +1792,6 @@ namespace DTTOOLS
 
             fstream.Read(bytes, 0, bytes.Length);
 
-            fstream.Dispose();
-
             fstream.Close();
 
             MemoryStream ms = new MemoryStream(bytes);
@@ -1914,8 +1895,6 @@ namespace DTTOOLS
             byte[] bytes = new byte[fstream.Length];
 
             fstream.Read(bytes, 0, bytes.Length);
-
-            fstream.Dispose();
 
             fstream.Close();
 

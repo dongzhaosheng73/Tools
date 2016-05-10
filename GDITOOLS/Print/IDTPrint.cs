@@ -9,6 +9,10 @@ namespace DTTOOLS.Print
     public interface IDTPrint
     {
         /// <summary>
+        /// 默认打印机
+        /// </summary>
+        System.Drawing.Printing.PrintDocument DocumentPrint { set; get; }
+        /// <summary>
         /// 打印
         /// </summary>
         /// <param name="image">图像流</param>

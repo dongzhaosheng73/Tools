@@ -4,7 +4,6 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.IO;
-using System.Windows;
 using DTTOOLS.Tools;
 
 namespace DTTOOLS.ExpandClass
@@ -214,19 +213,11 @@ namespace DTTOOLS.ExpandClass
                     if (pr.Length > 0) return false;
                 }
 
-        
-                    //创建启动对象  
-                var startInfo = new System.Diagnostics.ProcessStartInfo
-                {
-                    UseShellExecute = true,
-                    WorkingDirectory = Environment.CurrentDirectory,
-                    FileName = path,
-                    Verb = "runas",
-               
-                };
-                //设置启动动作,确保以管理员身份运行  
-
-                System.Diagnostics.Process.Start(startInfo);                 
+                var p = new System.Diagnostics.Process();
+                var startInfo = new System.Diagnostics.ProcessStartInfo(path);
+                p.StartInfo = startInfo;
+                p.StartInfo.UseShellExecute = false;
+                p.Start();
 
                 return true;
             }
@@ -238,45 +229,7 @@ namespace DTTOOLS.ExpandClass
             }
            
         }
-        /// <summary>
-        /// 启动应用
-        /// </summary>
-        /// <param name="repeat">是否重复启动</param>
-        /// <returns></returns>
-        public static bool ExeStart(this string path, bool repeat, string Arguments)
-        {
-            try
-            {
-                if (!repeat)
-                {
-                    var pr = System.Diagnostics.Process.GetProcessesByName(Path.GetFileNameWithoutExtension(path));
-                    if (pr.Length > 0) return false;
-                }
 
-        
-                    //创建启动对象  
-                var startInfo = new System.Diagnostics.ProcessStartInfo
-                {
-                    UseShellExecute = true,
-                    WorkingDirectory = Environment.CurrentDirectory,
-                    FileName = path,
-                    Verb = "runas",
-                    Arguments = Arguments
-                };
-                //设置启动动作,确保以管理员身份运行  
-
-                System.Diagnostics.Process.Start(startInfo);                 
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                Tools.Errorlog errorlog = new Errorlog(Directory.GetCurrentDirectory() + "\\error\\");
-                errorlog.WriteError(ex);
-                return false;
-            }
-           
-        }
         public static bool IsExeStart(this string exeName)
         {
             var pr = System.Diagnostics.Process.GetProcessesByName(exeName);
